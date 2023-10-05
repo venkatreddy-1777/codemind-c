@@ -1,15 +1,18 @@
 #include<stdio.h>
+#include<math.h>
 int main()
 {
-    int n,i;
+    int n,sq;
+    float d;
     scanf("%d",&n);
-    for(i=1;i<=n;i++)
+    d=sqrt(double(n));
+    sq=d;
+    if(sq==d)
     {
-        if(n==(i*i))
-        {
-            printf("True");
-            return 0;
-        }
+        printf("True");
     }
-    printf("False");
+    else
+    {
+        printf("False");
+    }
 }
